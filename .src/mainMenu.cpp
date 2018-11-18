@@ -4,6 +4,9 @@ using namespace std;
 
 #include "../.include/mainMenu.h"
 
+MainMenu::MainMenu(){};
+
+
 void MainMenu::interaction(){
    string line;
     ifstream getText;
