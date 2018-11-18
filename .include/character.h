@@ -18,7 +18,7 @@ class Character {
             int     iattack  = 0, 
             int     iluck    = 0,
             int     ispeed   = 0,
-            int     idefense = 0):name(iname),health(ihealth),attack_strenght(iattack),luck(iluck),defense(idefense){};
+            int     idefense = 0):name(iname),health(ihealth),attack_strenght(iattack),luck(iluck),speed(ispeed),defense(idefense){};
 
         void attr();
 

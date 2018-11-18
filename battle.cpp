@@ -2,14 +2,19 @@
 #include <string>
 using namespace std;
 
-#include ".include/main_menu.h"
-
+#include ".include/mainMenu.h"
+#include ".include/character.h"
 
 int main() {
 
-    Menu player;
+    Character marco("marco",1000,43,12,34,23);
 
-    player.interaction();
+    marco.attr();
+
+    MainMenu elmenu(5);
+
+    elmenu.interaction();
+ 
 
 
     return EXIT_SUCCESS;

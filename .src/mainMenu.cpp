@@ -2,9 +2,9 @@
 #include <fstream>
 using namespace std;
 
-#include "../.include/main_menu.h"
+#include "../.include/mainMenu.h"
 
-void Menu::interaction(){
+void MainMenu::interaction(){
    string line;
     ifstream getText;
 
@@ -15,6 +15,7 @@ void Menu::interaction(){
        exit(1);
    }
 
+    cout << "hi" << endl;
     while(!getText.eof()){
         getline(getText,line);
         cout << line << endl;
@@ -22,4 +23,8 @@ void Menu::interaction(){
             
      getText.close();
 
-}
+};
+
+int MainMenu::getData(){
+    return a;
+};
