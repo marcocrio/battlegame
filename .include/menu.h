@@ -11,6 +11,7 @@ class Menu {
         void save();
         void createchar();
         void exitgame();
+        void readFile(string fileName);
 
 };
 

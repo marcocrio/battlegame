@@ -9,23 +9,8 @@ using namespace std;
 
 void Menu::start(){
     char action;
-    string line;
-
-    ifstream getText;
-    //Opens the start screen 
-    getText.open(".resources/mainmenu.txt");
-    //checks that file was oppened succesfully
-   if(!getText.is_open()){
-       cerr << "File coulnt be opened" << endl;
-       exit(1);
-   }
-    //prints out welcome message
-    while(!getText.eof()){
-        getline(getText,line);
-        cout << line << endl;
-    }
-            
-    getText.close();
+    
+    readFile(".resources/mainmenu.txt");
 
     //start menu selection
     cin >> action;
@@ -39,13 +24,32 @@ void Menu::start(){
         load(); 
     }else if(action == 'n' || action == 'N'){
         createchar();
-    }else{
+    }else if (action == 'e' || action == 'E'){
         exitgame();
     }
 
 
 };
 
+void Menu::readFile(string fileName){
+    string line;
+
+    ifstream getText;
+    //Opens the start screen 
+    getText.open(fileName);
+    //checks that file was oppened succesfully
+   if(!getText.is_open()){
+       cerr << "File coulnt be opened" << endl;
+       exit(1);
+   }
+    //prints out welcome message
+    while(!getText.eof()){
+        getline(getText,line);
+        cout << line << endl;
+    }
+            
+    getText.close();
+};
 
 void Menu::load(){
     string character;
@@ -56,3 +60,11 @@ void Menu::load(){
 void Menu::exitgame(){
     exit(1);
 }
+
+void Menu::createchar(){
+    
+};
+
+void Menu::save(){
+
+};
