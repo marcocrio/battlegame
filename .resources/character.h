@@ -1,5 +1,6 @@
 #ifndef CHARACTER_H
-#define CHARACTER_H
+#define Characterh
+
 
 class Character {
     private:
