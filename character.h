@@ -9,16 +9,16 @@ class Character {
     
     public:
         Character(
-            string  iname    = "Not defined", 
-            int     ihealth  = "Not defined", 
-            int     iattack  = "Not defined", 
-            int     iluck    = "Not defined",
-            int     ispeed   = "Not defined",
-            int     idefense = "Not defined"):name(iname),health(ihealth),attack_strenght(iattack),luck(iluck),defense(idefense);
+            string  iname    = "Not Defined", 
+            int     ihealth  = 0, 
+            int     iattack  = 0, 
+            int     iluck    = 0,
+            int     ispeed   = 0,
+            int     idefense = 0):name(iname),health(ihealth),attack_strenght(iattack),luck(iluck),defense(idefense){};
 
         void attr();
 
-}
+};
 
 
 void Character::attr(){
@@ -33,5 +33,6 @@ void Character::attr(){
             << speed
             << " " 
             << defense
+            << endl;
             
 }
