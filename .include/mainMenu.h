@@ -4,10 +4,8 @@
 
 class MainMenu {
     private:
-        
     public:
-        MainMenu();
-        
+
         void interaction();
 
         int getData();
