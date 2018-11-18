@@ -1,5 +1,5 @@
 #ifndef CHARACTER_H
-#define Characterh
+#define CHARACTER_H
 
 
 class Character {
