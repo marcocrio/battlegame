@@ -1,8 +1,11 @@
-
 #include <iostream>
+#include <string>
 using namespace std;
 
 #include "character.h"
+
+
+
 
 
 int main() {

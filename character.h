@@ -1,3 +1,6 @@
+#ifndef CHARACTER_H
+#define CHARACTER_H
+
 class Character {
     private:
         string  name;
@@ -20,19 +23,4 @@ class Character {
 
 };
 
-
-void Character::attr(){
-    cout    << name 
-            << " " 
-            << health
-            << " " 
-            << attack_strenght
-            << " " 
-            << luck
-            << " " 
-            << speed
-            << " " 
-            << defense
-            << endl;
-            
-}
+#endif
