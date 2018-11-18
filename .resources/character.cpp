@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "character.h"
+#include "../character.h"
 
 void Character::attr(){
     cout    << name 

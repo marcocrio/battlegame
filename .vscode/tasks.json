@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "g++ -g battle.cpp -o battle",
+            "command": "g++ -g battle.cpp .resources/character.cpp -o battle",
             "group":{
                 "kind": "build",
                 "isDefault": true
