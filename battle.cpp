@@ -11,9 +11,9 @@ int main() {
 
     marco.attr();
 
-    MainMenu elmenu(5);
+    MainMenu elmenu();
 
-    elmenu.interaction();
+    cout << elmenu.getData() << endl;
  
 
 

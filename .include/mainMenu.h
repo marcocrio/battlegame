@@ -4,9 +4,8 @@
 
 class MainMenu {
     private:
-        int a;
+        
     public:
-        MainMenu(int b=0):a(b){};
 
         void interaction();
 

@@ -26,5 +26,5 @@ void MainMenu::interaction(){
 };
 
 int MainMenu::getData(){
-    return a;
+    return 4;
 };
